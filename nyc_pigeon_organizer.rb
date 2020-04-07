@@ -32,8 +32,8 @@ pigeon_names.each{|name| pigeons[name]={:color =>[], :gender =>[], :lives =>[]}}
 pigeon_data.each {|trait, attribute|  trait; attribute
   attribute.each {|top, name|   top; name;
     name.each{|value| 
-    if pigeons[value][trait] == nil;
-      pigeons[value][trait] = top
+    if pigeons[value]
+      pigeons[value][trait].push(top)
     end
     }
   }
