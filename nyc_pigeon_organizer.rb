@@ -30,10 +30,9 @@ pigeon_names.flatten!
 pigeon_names.uniq!
 pigeon_names.each{|name| pigeons[name]={:color =>[], :gender =>[], :lives =>[]}}
 pigeon_data.each {|trait, attribute|  trait; attribute
-  attribute.each {|top, name|  top;  name
-    if pigeons[name] !=nil; 
-      p pigeons[name]
-      pigeons[name][trait]= top.to_s
+  attribute.each {|top, pigeon|  top;  name
+    if pigeons[pigeon] !=nil; 
+      pigeons[pigeon][trait]= top.to_s
     end
   }
 }
