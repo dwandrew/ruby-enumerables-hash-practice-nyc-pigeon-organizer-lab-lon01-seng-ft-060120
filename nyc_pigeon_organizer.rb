@@ -33,7 +33,7 @@ pigeon_data.each {|trait, attribute|  trait; attribute
   attribute.each {|top, name|   top; name;
     name.each{|value| 
     if pigeons[value]
-      pigeons[value][trait].push(top)
+      pigeons[value][trait].push(top.to_s)
     end
     }
   }
