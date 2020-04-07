@@ -38,6 +38,6 @@ pigeon_data.each {|trait, attribute|  trait; attribute
   }
 }
 
-pp pigeons
+pigeons
 end
 
