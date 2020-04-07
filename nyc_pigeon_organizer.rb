@@ -35,6 +35,6 @@ pigeon_names.each{|name| pigeons[name]={:color =>[], :gender =>[], :lives =>[]}}
 #  }
 #}
 
-pigeons
+pp pigeons
 end
 
