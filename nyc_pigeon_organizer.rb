@@ -31,7 +31,7 @@ pigeon_names.uniq!
 pigeon_names.each{|name| pigeons[name]={:color =>[], :gender =>[], :lives =>[]}}
 pigeon_data.each {|trait, attribute|  trait; attribute
   attribute.each {|top, name|   top; name;
-    name.each{|value| p value}
+    name.each{|value| p pigeons[value]}
   }
 }
 
