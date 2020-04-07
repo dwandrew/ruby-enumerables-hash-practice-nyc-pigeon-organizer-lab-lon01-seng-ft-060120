@@ -33,6 +33,7 @@ pigeon_data.each {|trait, attribute| p trait;  attribute
   attribute.each {|top, name|  top;  name
     if pigeons[name]
       pigeons[name][trait]= top.to_s
+      binding.pry
     end
   }
 }
