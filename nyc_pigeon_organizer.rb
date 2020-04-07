@@ -29,9 +29,10 @@ pigeon_data[:color].each {|k, v| pigeon_names.push(v)}
 pigeon_names.flatten!
 pigeon_names.uniq!
 pigeon_names.each{|name| pigeons[name]={:color =>[], :gender =>[], :lives =>[]}}
-pigeon_data.each {|trait, attribute|  trait;  p attribute
+pigeon_data.each {|trait, attribute|  trait; attribute
   attribute.each {|top, name|  top;  name
     if pigeons[name];
+      p pigeons[name]
       pigeons[name][trait]= top.to_s
     end
   }
